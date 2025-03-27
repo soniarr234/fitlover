@@ -1,0 +1,89 @@
+/*_________________________________________________RUTINES PAGE___________________________________________*/
+.routines-page {
+    background-color: #0c0c0c;
+    padding: 70px 50px;
+    height: 200%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+/*_______________________TITLE______________________*/
+.title-rutines-page{
+    margin: 50px 0px;
+    color: aliceblue;
+    text-align: center;
+    font-size: 35px;
+}
+/*_______________________________________________CREATE A NEW ROUTINE__________________________________*/
+/*_______________________BUTTON______________________*/
+.create-new-routine{
+    background-color: #d1f61d;
+    border: none;
+    border-radius: 8px;
+    width: 320px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 70px;
+    padding: 10px 20px;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.create-new-routine:hover{
+    transform: scale(1.05);
+    background-color: #b2cf23;
+}
+/*_______________________CREATE A NEW ROUTINE POPUP______________________*/
+.contianer-popup-create-routine{
+    position: absolute;
+    top: 43%;
+    background-color: #fff;
+    width: 350px;
+    height: 190px;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+}
+.popup-create-routine{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.popup-create-routine h2{
+    color: #333837;
+}
+.popup-create-routine input{
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    padding: 2px 5px;
+    text-align: center;
+    font-size: 15px;
+    width: 275px;
+    background-color: #333837;
+    color: aliceblue;
+}
+.popup-create-routine input::placeholder {
+    color: rgb(214, 214, 214);
+}
+
+.buttons-popup-create-routine{
+    display: flex;
+    gap: 20px;
+}
+/*______________________________________________CONTAINER ROUTINES_________________________________________*/
+.routines-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+/*_______________________ROUTINE LIST______________________*/
+.routines-items li{
+    list-style: none;
+}

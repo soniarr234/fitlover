@@ -1,0 +1,285 @@
+/*_______________________________________________ROUTINE DETAILS PAGE__________________________________________*/
+.routine-details-page {
+    background-color: #0c0c0c;
+    padding: 70px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+/*_______________________TITLE______________________*/
+.title-routine-details-page{
+    margin: 30px 0px;
+    color: aliceblue;
+    text-align: center;
+    font-size: 35px;
+}
+.container-routine-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*_______________________BUTTON START / STOP ROUTINE______________________*/
+.start-routine-button{
+    width: 80%;
+    padding: 5px 10px;
+    background-color: #d1f61d;
+    color: #333837;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 35px;
+    margin: 20px 0px 50px 0px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.stop-routine-button{
+    width: 80%;
+    padding: 5px 10px;
+    background-color: orange;
+    color: #333837;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 35px;
+    margin: 20px 0px 50px 0px;
+    font-weight: bold;
+    font-size: 18px;
+}
+/*__________________________________________EXERCISES ROUTINE CONTAINER_______________________________________*/
+.container-exercises-routine{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+/*_________________________________________SERIES________________________________________*/
+.button-add-series{
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #333837;
+    color: #d1f61d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 25px;
+    margin: 10px 0px;
+}
+
+.no-series{
+    font-size: 14px;
+    color: orange;
+    font-weight: bold;
+    margin-top: -10px;
+}
+/*________________________________ADD NEW SERIE______________________________*/
+.form-add-series{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.form-add-series div{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+.form-add-series div input{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #797979;
+    margin-bottom: 10px;
+}
+/*________________________SAVE SERIE BUTTON______________________*/
+.container-button-save-series{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-save-series{
+    width: 50%;
+    padding: 5px 10px;
+    background-color: #333837;
+    color: #d1f61d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.button-save-series:hover{
+    color:#b2cc2f;
+}
+
+/*________________________________LIST SERIES______________________________*/
+.series-section li{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 5px;
+    align-items: center;
+    padding: 0px 10px;
+    font-size: 14px;
+}
+/*__________________________________EDIT SERIE BUTTON________________________________*/
+.edit-btn{
+    border: none;
+    background-color: transparent;
+    color: #313538;
+    cursor: pointer;
+}
+/*___________________FORM EDIT SERIE_______________________*/
+.form-edit-serie li{
+    display: flex;
+    align-items: center;
+}
+.form-edit-serie li input{
+    background-color: transparent;
+    border: none;
+    width: 50px;
+}
+.button-save-edit-series{
+    background-color: #333837;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    color: #d1f61d;
+    cursor: pointer;
+}
+/*__________________________________DELETE SERIE BUTTON________________________________*/
+.delete-serie-btn{
+    background-color: orange;
+    color: #333837;
+    border: none;
+    border-radius: 5px;
+    padding: 4px 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.line{
+    background-color: #b1b0b0;
+    width: 100%;
+    height: 1px;
+    margin: 5px 0px;
+}
+/*________________________PRESS "INICIAR RUTINA"______________________*/
+.additional-btn {
+    background-color: #333837;
+    color: white;
+    border: none;
+    padding: 4px 7px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+    
+}
+.additional-btn.active {
+    background-color: orange;
+}
+.additional-btn.active {
+    background-color: orange;
+    color: #333837;
+}
+.container-button-rest{
+    display: flex;
+    justify-content: center;
+}
+.button-rest{
+    background-color: orange;
+    color: #333837;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 10px 0px 5px 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100%;
+}
+/*________________________PRESS "INICIAR RUTINA" DESCANSO______________________*/
+.popup-descanso {
+    position: absolute;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    animation: fadeIn 0.3s ease-in-out;
+}
+.popup-descanso h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.countdown {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff4757;
+    margin-bottom: 15px;
+}
+.popup-descanso button {
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.popup-descanso button:hover {
+    background: #e84118;
+}
+/* Animación para suavizar la aparición del popup */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/*__________________________________________BUTTON ADD EXERCISE_______________________________________*/
+.routine-add-exercises-button{
+    margin-top: 30px;
+    background-color: #d1f61d;
+    color: #313538;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*__________________________________________BUTTON SUPERSERIE_______________________________________*/
+.superserie-btn{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: bold;
+    height: 30px;
+    background-color: #d1f61d;
+    cursor: pointer;
+}
+
+/*____________________________________________________________________________________________________________*/
+/*___________________________________________________MADIA QUERYS_____________________________________________*/
+/*____________________________________________________________________________________________________________*/
+@media (max-width: 500px) {
+    .routine-details-page{
+        padding: 70px 10px;
+    }
+
+    .container-exercises-routine{
+        width: 340px;
+        padding: 10px;
+    }
+}

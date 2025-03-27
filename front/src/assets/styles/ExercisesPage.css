@@ -1,0 +1,254 @@
+/*___________________________________________________EXERCISE PAGE_____________________________________________*/
+.exercises-page {
+    background-color: #0c0c0c;
+    padding: 70px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*_______________________TITLE______________________*/
+.title-exercises-page{
+    margin-top: 30px;
+    color: aliceblue;
+    text-align: center;
+    font-size: 35px;
+}
+/*________________________________________________CONTAINER CARDS____________________________________________*/
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: flex-start; 
+    width: 100%;
+    flex-direction: column;
+}
+/*________________________________________________CONTAINER LETTER_____________________________________________*/
+/*_______________________CONTAINER OF EXERCISES FOR EACH LETTER______________________*/
+.letter-group {
+    width: 100%;
+}
+.exercise-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+/*_______________________LETTER AND SEPARATOR______________________*/
+.letter-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333837;
+    text-align: left;
+    background-color: #d1f61d;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+.container-letter{
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.separator{
+    width: 20%;
+    height: 3px;
+    background-color: #d1f61d;
+}
+/*___________________________________________________FILTER MUSCLE_____________________________________________*/
+/*_______________________FILTER BUTTON______________________*/
+.filter-button {
+    background-color: #d1f61d;
+    color: #333837;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.filter-button:hover {
+    background-color: #b2cc2f;
+}
+/*___________________________________FILTER POPUP__________________________________*/
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+/*_______________________COUNT MUSCLE FILTER______________________*/
+.exercise-count {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+/*_______________________MUSCLE LIST______________________*/
+.muscle-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+.muscle-list li {
+    padding: 10px;
+    margin: 5px 0;
+    background: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.muscle-list li:hover, .muscle-list li.selected {
+    background: #d1f61d;
+    font-weight: bold;
+}
+/*_______________________CONTAINER BUTTON GUARDAR AND CANCELAR______________________*/
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+/*_______________________MUSCLES FILTERED______________________*/
+.filter-summary ul{
+    display: flex;
+    gap: 10px;
+}
+.filter-summary li{
+    color: #333837;
+    margin: -20px 0px 20px 0px;
+    background-color: #fff;
+    border-radius: 5px;
+    list-style: none;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+/*_______________________TRASH ICON______________________*/
+.trash-icon {
+    cursor: pointer;
+    color: orange;
+    font-size: 18px;
+}
+/*_______________________CREATE EXERCISE SUCCESS______________________*/
+.text-create-exercise-success{
+    color: #333837;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.popup-overlay {
+    position: fixed;
+    background-color: red;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.close-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cancel-button{
+    margin-top: 20px;
+    background-color: rgb(165, 165, 165);
+}
+
+.delete-button{
+    width: 130px;
+    margin-top: 20px;
+    padding: 8px 10px 5px 10px;
+    background-color: orange;
+    color:#333837;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/*____________________________________________________________________________________________________________*/
+/*___________________________________________________MADIA QUERYS_____________________________________________*/
+/*____________________________________________________________________________________________________________*/
+@media (max-width: 768px) {
+    .exercise-group {
+        margin-bottom: 20px;
+    }
+    .exercise-letter {
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #d1f61d;
+        margin-top: 10px;
+        padding: 0px 10px;
+        border-radius: 5px;
+    }
+    .exercise-items {
+        display: block;
+    }
+    .small-screen-items {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .letter-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .separator{
+        height: 3px;
+        width: 100%;
+        background-color: #d1f61d;
+
+    }
+}
+
+
+@media (max-width: 500px) {
+    .exercises-page {
+        padding: 70px 25px;
+    }
+
+    .title-exercises-page{
+        font-size: 30px;
+    }
+}

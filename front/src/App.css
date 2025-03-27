@@ -1,0 +1,138 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Quicksand", sans-serif;
+}
+
+/*________________________________________POPUP MESSAGE________________________________________*/
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.893);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.container-popup {
+  background: #fff;
+  padding: 20px 10px;
+  border-radius: 8px;
+  text-align: center;
+  width: 350px;
+  color: #333837;
+}
+/*_______________________MESSAGE______________________*/
+.container-popup h3{
+  margin-bottom: 10px;
+}
+/*_______________________CLOSE BUTTON______________________*/
+.close-button{
+  width: 40%;
+  padding: 7px;
+  background-color: #d1f61d;
+  color: #333837;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.close-button:hover {
+  background-color: #b2cf23;
+  color: #333837;
+}
+
+/*______________________________________MESSAGE SUCCESS OR FAIL POPUP______________________________________*/
+.message-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 340px;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  background-color: #333837;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.message-popup h4{
+  margin-bottom: 10px;
+}
+
+.message-popup.success {
+  color: #d1f61d;
+}
+.message-popup.success p{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.message-popup.error p{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.message-popup.error {
+  color: red;
+}
+/*__________________________________________________BUTTONS_________________________________________________*/
+.save-btn{
+  background: #d1f61d;
+  color: #333837;
+  height: 35px;
+  width: 50%;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.save-btn:hover {
+  background: #333837;
+  color: #d1f61d;
+}
+
+.cancel-btn {
+  background: orange;
+  color: #333837;
+  height: 35px;
+  width: 50%;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cancel-btn:hover {
+  background: #333837;
+  color: orange;
+}
+
+.close-btn{
+  background-color: #ccc;
+  color: #333837;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  height: 35px;
+  width: 50%;
+}
+.close-btn:hover{
+  background-color: #9d9d9d;
+}

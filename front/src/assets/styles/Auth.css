@@ -1,0 +1,158 @@
+/*___________________________________________________AUTH PAGE_____________________________________________*/
+.Auth-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    background-color: #0c0c0c;
+}
+
+/*_____________________________________________FORM AND IMAGE CONTAINER_______________________________________*/
+/*______________________________________________IMAGE_____________________________________________*/
+.img-form-section {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+}
+
+.img-form-section img {
+    mask-image: linear-gradient(to right, black 70%, transparent);
+    -webkit-mask-image: linear-gradient(to right, black 70%, transparent);
+    width: 500px;
+    object-fit: cover;
+}
+
+/*______________________________________________FORM_____________________________________________*/
+.form-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: #191919;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 400px;
+    margin: auto;
+}
+/*_______________________LOGO______________________*/
+.form-section img{
+    width: 120px;
+}
+
+/*_______________________INPUT AND BUTTON CONTAINER______________________*/
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+/*_______________________TITLE______________________*/
+.form-section h2{
+    color: #d1f61d;
+    margin: 20px 0px;
+}
+
+/*_______________________INPUTS FORM______________________*/
+.form-section input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/*_______________________PASSWORD______________________*/
+.password-container {
+    position: relative;
+}
+.password-toggle-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+/*_______________________BUTTON FORM______________________*/
+.button-form {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #d1f61d;
+    color: #333837;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 15px;
+}
+.button-form:hover {
+    background-color: #b2cf23;
+}
+
+/*___________CHANGE BETWEEN --> ¿No tienes cuenta? " : "¿Ya tienes cuenta?___________*/
+.text-form{
+    color: #ffffff;
+    margin-top: 10px;
+}
+.form-section p span{
+    color: #d1f61d;
+    cursor: pointer;
+}
+.form-section span:hover {
+    color: #b2cf23;
+}
+
+
+/*_______________________ERROR MESSAGE______________________*/
+.error-message {
+    font-size: 17px;
+    margin-top: 10px;
+    text-align: center;
+    color: orange;
+}
+
+/*____________________________________________________________________________________________________________*/
+/*___________________________________________________MADIA QUERYS_____________________________________________*/
+/*____________________________________________________________________________________________________________*/
+@media (max-width: 800px) {
+    .Auth-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .img-form-section {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    .img-form-section img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        mask-image: none;
+        -webkit-mask-image: none;
+    }
+
+    .img-form-section::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6); /* Oscurece la imagen de fondo */
+    }
+
+    .form-section {
+        position: relative;
+        z-index: 2;
+        background: rgba(25, 25, 25, 0.9); /* Hace el fondo del formulario más opaco */
+        width: 70%;
+        max-width: 300px;
+        padding: 30px;
+        border-radius: 10px;
+    }
+}
